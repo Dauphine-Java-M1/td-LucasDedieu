@@ -44,7 +44,7 @@ public class PrimeCollection{
 	
 	
     public static void main( String[] args )  {
-        initRandom(100, 100);
+        initRandom(100, 2000);
         printPrimes();
 
     }

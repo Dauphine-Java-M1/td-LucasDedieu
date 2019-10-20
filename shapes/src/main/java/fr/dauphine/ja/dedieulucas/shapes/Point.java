@@ -54,4 +54,9 @@ public class Point {
 		Point p = (Point) obj;
 		return isSameAs(p);
 	}
+	
+	public void translate(int dx, int dy) {
+		x += dx;
+		y += dy;
+	}
 }

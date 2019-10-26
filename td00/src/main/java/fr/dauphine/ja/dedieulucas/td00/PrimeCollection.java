@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Hello world!
- *
- */
+
 public class PrimeCollection{
 	private static List<Integer> numbers= new ArrayList<Integer>();
 	

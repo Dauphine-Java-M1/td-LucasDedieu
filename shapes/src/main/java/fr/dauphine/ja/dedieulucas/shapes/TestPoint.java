@@ -1,6 +1,7 @@
 package fr.dauphine.ja.dedieulucas.shapes;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TestPoint {
 	public static void main(String[] args) {
@@ -23,5 +24,23 @@ public class TestPoint {
 		list.add(p1);
 		System.out.println(list.indexOf(p2));
 		System.out.println(list.indexOf(p3));
+	}
+	
+	public static boolean contains(Point p, Circle[] circles ) {
+		for(Circle c : circles) {
+			if(!c.contains(p)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public static boolean contains(Point p, Ring[] rings ) {
+		for(Ring r : rings) {
+			if(!r.contains(p)) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

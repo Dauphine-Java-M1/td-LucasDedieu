@@ -29,23 +29,23 @@ Exercice 2
 
 Exercice 3
 
-2. Si on dépasse la capacité fixée on aura une exception (OutOfBound). Il faut catch l'exception et empecher d'ajouter un nouveau point si la ligne brisée est pleine
+2. Si on dÃ©passe la capacitÃ© fixÃ©e on aura une exception (OutOfBound). Il faut catch l'exception et empecher d'ajouter un nouveau point si la ligne brisÃ©e est pleine
 
-5.Lors du premier essais cela renvoit false car la liste, même vide, ne contient pas de null. Lors du deuxième essais on a ajouté null dans la liste donc renvoit true;
+5.Lors du premier essais cela renvoit false car la liste, mÃªme vide, ne contient pas de null. Lors du deuxiÃ¨me essais on a ajoutÃ© null dans la liste donc renvoit true;
 
 Exercice 4
 
-5. Le problème est que c et c2 utilisent le même objet Point comme centre. Si c2 appelle translate sur son centre, cela va modifier celui de c1 aussi. Il faut que c2 utilise un autre point. On pourrait également changer le constructeur de Circle afin qu'il ne prenne que les coordonnées d'un point et qu'il instancie lui même le point afin de garantir son unicité.
+5. Le problÃ¨me est que c et c2 utilisent le mÃªme objet Point comme centre. Si c2 appelle translate sur son centre, cela va modifier celui de c1 aussi. Il faut que c2 utilise un autre point. On pourrait Ã©galement changer le constructeur de Circle afin qu'il ne prenne que les coordonnÃ©es d'un point et qu'il instancie lui mÃªme le point afin de garantir son unicitÃ©.
 
-6. Le problème est que si on translate le centre du cercle, le cercle va bouger avec son centre. Pour résoudre cela on peut creer et renvoyer un nouveau point dans getCenter() en reprenant les mêmes coordonnées que celles du centre.
+6. Le problÃ¨me est que si on translate le centre du cercle, le cercle va bouger avec son centre. Pour rÃ©soudre cela on peut creer et renvoyer un nouveau point dans getCenter() en reprenant les mÃªmes coordonnÃ©es que celles du centre.
 
-9. oui la méthode doit être statique
+9. oui la mÃ©thode doit Ãªtre statique
 
 Exercice 5
 
 1. Oui c'est interessant car un anneau est un centre avec un attribut en plus : son rayon interne.
 
-4. Sans code supplémentaire, cela va appeller la méthode toString() de la classe Circle. Il faut ajouter toString() dans Ring.
+4. Sans code supplÃ©mentaire, cela va appeller la mÃ©thode toString() de la classe Circle. Il faut ajouter toString() dans Ring.
 
 
  

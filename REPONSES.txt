@@ -1,6 +1,4 @@
-Lucas Dedieu
 
-_____________________________________________________________________________________
 TD01
 
 Exercice 1:
@@ -29,4 +27,25 @@ Exercice 2
 
 2. La mÃ©thode List.indexOf(Object o) retourne l'index de l'objet o dans la liste. S'il n'est pas prÃ©sent elle renvoit -1. Ici p2 est prÃ©sent car point le mÃªme objet que p1. Mais p3 n'est pas dans la liste. Cette mÃ©thode se base sur la mÃ©thode equals(). Il faut donc overider la methode equals dans la classe Point.
 
+Exercice 3
 
+2. Si on dépasse la capacité fixée on aura une exception (OutOfBound). Il faut catch l'exception et empecher d'ajouter un nouveau point si la ligne brisée est pleine
+
+5.Lors du premier essais cela renvoit false car la liste, même vide, ne contient pas de null. Lors du deuxième essais on a ajouté null dans la liste donc renvoit true;
+
+Exercice 4
+
+5. Le problème est que c et c2 utilisent le même objet Point comme centre. Si c2 appelle translate sur son centre, cela va modifier celui de c1 aussi. Il faut que c2 utilise un autre point. On pourrait également changer le constructeur de Circle afin qu'il ne prenne que les coordonnées d'un point et qu'il instancie lui même le point afin de garantir son unicité.
+
+6. Le problème est que si on translate le centre du cercle, le cercle va bouger avec son centre. Pour résoudre cela on peut creer et renvoyer un nouveau point dans getCenter() en reprenant les mêmes coordonnées que celles du centre.
+
+9. oui la méthode doit être statique
+
+Exercice 5
+
+1. Oui c'est interessant car un anneau est un centre avec un attribut en plus : son rayon interne.
+
+4. Sans code supplémentaire, cela va appeller la méthode toString() de la classe Circle. Il faut ajouter toString() dans Ring.
+
+
+ 

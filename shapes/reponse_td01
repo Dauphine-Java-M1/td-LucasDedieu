@@ -1,0 +1,51 @@
+
+TD01
+
+Exercice 1:
+1. La mÃ©thode se trouve dans la classe Point donc peut acceder aux deux attributs mÃªme si ils sont private.
+
+2. En mettant la mÃ©thode dans la classe TestPoint, on ne peut pas acceder aux attributs car ils sont private dans la classe Point. On peut y remedier en modifiant la visibilitÃ© de ces attributs (package ou public).
+
+3. On met les attributs en privÃ© pour Ã©viter qu'ils soient modifiÃ©s sans contrÃ´le. Dans l'exemple d'une fraction avec deux attributs on ne veut pas que le denominateur soit Ã©gale Ã  0. Si on met l'attribut en public, rien ne pourra l'empecher.
+
+4. Un accesseur est une mÃ©thode qui permet de recupÃ©rer (getter) ou de modifier (setter) un attribut. Un setter permet de contrÃ´ler la valeur que l'on veut donner Ã  l'attribut. Dans l'exemple prÃ©cÃ©dent : empecher de changer la valeur du dÃ©nominateur en 0.
+On doit le faire ici car les attributs de Point sont private.
+
+5. En crÃ©ant un constructeur avec paramÃ¨tres, celui par dÃ©faut ne peut plus Ãªtre appelÃ©
+
+6. Il faut mettre this.x = x et this.y = y.
+
+7. On crÃ©er une variable statique cpt dans la classe Point ainsi que sont getter. Dans le constructeur on incrÃ©mente cpt de 1. On peut acceder Ã  tout moment en faisant Point.getCpt() 
+
+8. Le compiltateur sait lequel appeler car les diffÃ©rents constructeurs d'une mÃªme classe ont chacun une signature unique.
+
+9. Il faut crÃ©er la mÃ©thode toString() dans la classe Point.
+
+Exercice 2
+
+1. Cela affiche true puis false. P1 et p2 ont la mÃªme adresse mais p1 et p3 non. Il ne faut pas confondre adresse mÃ©moire et valeur des attributs
+
+2. La mÃ©thode List.indexOf(Object o) retourne l'index de l'objet o dans la liste. S'il n'est pas prÃ©sent elle renvoit -1. Ici p2 est prÃ©sent car point le mÃªme objet que p1. Mais p3 n'est pas dans la liste. Cette mÃ©thode se base sur la mÃ©thode equals(). Il faut donc overider la methode equals dans la classe Point.
+
+Exercice 3
+
+2. Si on dépasse la capacité fixée on aura une exception (OutOfBound). Il faut catch l'exception et empecher d'ajouter un nouveau point si la ligne brisée est pleine
+
+5.Lors du premier essais cela renvoit false car la liste, même vide, ne contient pas de null. Lors du deuxième essais on a ajouté null dans la liste donc renvoit true;
+
+Exercice 4
+
+5. Le problème est que c et c2 utilisent le même objet Point comme centre. Si c2 appelle translate sur son centre, cela va modifier celui de c1 aussi. Il faut que c2 utilise un autre point. On pourrait également changer le constructeur de Circle afin qu'il ne prenne que les coordonnées d'un point et qu'il instancie lui même le point afin de garantir son unicité.
+
+6. Le problème est que si on translate le centre du cercle, le cercle va bouger avec son centre. Pour résoudre cela on peut creer et renvoyer un nouveau point dans getCenter() en reprenant les mêmes coordonnées que celles du centre.
+
+9. oui la méthode doit être statique
+
+Exercice 5
+
+1. Oui c'est interessant car un anneau est un centre avec un attribut en plus : son rayon interne.
+
+4. Sans code supplémentaire, cela va appeller la méthode toString() de la classe Circle. Il faut ajouter toString() dans Ring.
+
+
+ 

@@ -24,6 +24,23 @@ public class TestPoint {
 		list.add(p1);
 		System.out.println(list.indexOf(p2));
 		System.out.println(list.indexOf(p3));
+		
+		BrokenLine bl = new BrokenLine(5);
+		bl.add(null);
+		System.out.println(bl.contain(null));
+		
+		Point p=new Point(1,2);
+		//Circle c=new Circle(p,1);
+		Circle c2=new Circle(p,2);
+		c2.translate(1,1);
+	//	System.out.println(c+" "+c2);
+		
+		Circle c=new Circle(new Point(1,2), 5);
+		c.getCenter().translate(1,1);
+		System.out.println(c);
+		System.out.println(c.surface());
+		System.out.println(c.contains(new Point(1,7)));
+
 	}
 	
 	public static boolean contains(Point p, Circle[] circles ) {

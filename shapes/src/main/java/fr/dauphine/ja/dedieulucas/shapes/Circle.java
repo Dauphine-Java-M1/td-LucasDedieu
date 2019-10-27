@@ -20,7 +20,7 @@ public class Circle {
 	}
 	
 	public Point getCenter() {
-		return center;
+		return new Point(center.getX(), center.getY());
 	}
 	
 	public int getRadius() {

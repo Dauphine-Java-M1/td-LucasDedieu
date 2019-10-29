@@ -3,6 +3,11 @@ package fr.dauphine.ja.dedieulucas.shapes;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.dauphine.ja.dedieulucas.shapes.model.BrokenLine;
+import fr.dauphine.ja.dedieulucas.shapes.model.Circle;
+import fr.dauphine.ja.dedieulucas.shapes.model.Point;
+import fr.dauphine.ja.dedieulucas.shapes.model.Ring;
+
 public class TestPoint {
 	public static void main(String[] args) {
 		/* EXO 1

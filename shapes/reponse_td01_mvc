@@ -1,0 +1,6 @@
+Exercice 1
+
+5. Cette méthode est appelée dès que le composant devient visible ou via un listener défini par l'utilisateur (en appelant la méthode repaint()).
+
+6. La principale différence entre ces deux packages est que awt est un framework graphique qui repose sur les composants natifs de l'OS sous-jacent. Swing est un autre framework graphique qui est indépendant de l'OS sous-jacent et qui dessine lui même les composants. 
+Avec awt rendu va donc changer en fonction de l'OS.

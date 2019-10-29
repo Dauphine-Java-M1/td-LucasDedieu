@@ -17,7 +17,7 @@ On doit le faire ici car les attributs de Point sont private.
 
 7. On créer une variable statique cpt dans la classe Point ainsi que sont getter. Dans le constructeur on incrémente cpt de 1. On peut acceder à tout moment en faisant Point.getCpt() 
 
-8. Le compiltateur sait lequel appeler car les différents constructeurs d'une même classe ont chacun une signature unique.
+8. Le compiltateur sait lequel appeller car les différents constructeurs d'une même classe ont chacun une signature unique.
 
 9. Il faut créer la méthode toString() dans la classe Point.
 

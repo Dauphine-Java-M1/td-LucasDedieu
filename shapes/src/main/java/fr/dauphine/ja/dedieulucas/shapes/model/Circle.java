@@ -1,4 +1,4 @@
-package fr.dauphine.ja.dedieulucas.shapes;
+package fr.dauphine.ja.dedieulucas.shapes.model;
 
 public class Circle {
 	private Point center;

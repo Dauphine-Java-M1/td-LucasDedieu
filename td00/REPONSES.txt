@@ -1,0 +1,55 @@
+Maven
+
+
+Exercice 1
+4. La version est 3.6.0
+
+5. Le groupId est l'identifaiant du groupe, à l'origine du projete. Il sert a identifier le projet parmis tous les autres projets. L'artifactId sera utilisé pourconstruire le nom de l'artefact final.
+
+6. Il y a 3 dossiers : classes, maven-status et test-classes
+
+8. Le classpath  permet de préciser au compilateur et à la JVM où elle peut trouver les classes requises par l'application
+
+13. Il s'agit de la version de la JVM qui executera nos fichiers .class. Il faut mettre 1.7
+
+Exericice 2
+
+1. on a : " aucun attribut manifest principal dans target/td00-1.0-SNAPSHOT.jar"
+
+Exercice 3
+
+3. Si l'on fait Ctrl+Espace, Eclipse va transformer sysout en appel à la méthode System.out.println()
+
+4. Si l'on fait Ctrl+Espace, Eclipse va transformer toStr en créant la méthode toString() (vide pour le moment)
+
+5. Si l'on fait Ctrl+Espace, Eclipse va proposer de completer l'expression main.
+
+6. Si l'on fait Ctrl+Espace, Eclipse va proposer de completer l'expression get. Pareil pour set
+
+7. Cela sert à faire un Refactor
+
+8. Cela nous redirige vers la classe String
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Git
+
+
+Exercice 1
+
+5. Il y a un changement dans PrimeCollection.java
+
+Exercice 2
+
+5. Cela ne marche pas. Le push est rejeté
+
+7. Il y aurait eu un conflit et on aurait du merge les deux
+
+Exercice 3
+
+2. En executant le test on observe que le test ne passe pas. La méthode assertTrue() verifie si le paramètre donné est vrai.
+
+
+
+
+

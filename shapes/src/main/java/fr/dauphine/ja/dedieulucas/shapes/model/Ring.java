@@ -1,5 +1,9 @@
 package fr.dauphine.ja.dedieulucas.shapes.model;
 
+import java.awt.Graphics;
+
+import fr.dauphine.ja.dedieulucas.shapes.view.RingDrawer;
+
 public class Ring extends Circle{
 	
 	private int internalRadius;
@@ -42,6 +46,11 @@ public class Ring extends Circle{
 			return true;
 		}
 		return false;
+	}
+	
+	@Override
+	public void draw(Graphics g) {
+		new RingDrawer(this).draw(g);
 	}
 
 

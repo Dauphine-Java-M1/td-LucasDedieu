@@ -1,14 +1,21 @@
 package fr.dauphine.ja.dedieulucas.shapes.model;
 
+import java.awt.Graphics;
 import java.util.LinkedList;
 import java.util.List;
 
-public class BrokenLine {
+import fr.dauphine.ja.dedieulucas.shapes.view.BrokenLineDrawer;
+
+public class BrokenLine extends Shape{
 	private int currentIndex=0;
 	//private Point[] points;
 	private List<Point> pointList;
 	
-	public BrokenLine(int n) {
+	public List<Point> getPointList() {
+		return pointList;
+	}
+
+	public BrokenLine() {
 		//this.points = new Point[n];
 		this.pointList = new LinkedList<>();
 	}
@@ -44,6 +51,14 @@ public class BrokenLine {
 		return false;
 		*/
 		return pointList.contains(myPoint);
+	}
+	
+	
+
+	@Override
+	public void draw(Graphics g) {
+		new BrokenLineDrawer(this).draw(g);
+		
 	}
 	
 	

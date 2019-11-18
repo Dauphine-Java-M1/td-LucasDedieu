@@ -1,6 +1,10 @@
 package fr.dauphine.ja.dedieulucas.shapes.model;
 
-public class Circle {
+import java.awt.Graphics;
+
+import fr.dauphine.ja.dedieulucas.shapes.view.CircleDrawer;
+
+public class Circle extends Shape{
 	private Point center;
 	private int radius;
 	
@@ -46,6 +50,12 @@ public class Circle {
 			return false;
 		}
 		return true;
+	}
+
+	@Override
+	public void draw(Graphics g) {
+		new CircleDrawer(this).draw(g);
+		
 	}
 
 }

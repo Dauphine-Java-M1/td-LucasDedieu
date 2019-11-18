@@ -1,6 +1,10 @@
 package fr.dauphine.ja.dedieulucas.shapes.model;
 
-public class Point {
+import java.awt.Graphics;
+
+import fr.dauphine.ja.dedieulucas.shapes.view.CircleDrawer;
+
+public class Point{
 	static private int cpt = 0;
 	private int x;
 	private int y;
@@ -59,4 +63,6 @@ public class Point {
 		x += dx;
 		y += dy;
 	}
+
+	
 }

@@ -30,7 +30,7 @@ public class TestPoint {
 		System.out.println(list.indexOf(p2));
 		System.out.println(list.indexOf(p3));
 		
-		BrokenLine bl = new BrokenLine(5);
+		BrokenLine bl = new BrokenLine();
 		bl.add(null);
 		System.out.println(bl.contain(null));
 		
